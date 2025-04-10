@@ -1,4 +1,4 @@
-package com.mayank.cart.exception;
+package com.ojas.cart.exception;
 
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;

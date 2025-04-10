@@ -1,11 +1,11 @@
-package com.mayank.cart.controller;
+package com.ojas.cart.controller;
 
-import com.mayank.cart.config.UserService;
-import com.mayank.cart.dto.Cart;
-import com.mayank.cart.dto.CartItem;
-import com.mayank.cart.dto.CustomResponse;
-import com.mayank.cart.dto.UpdateCartRequest;
-import com.mayank.cart.service.CartService;
+import com.ojas.cart.config.UserService;
+import com.ojas.cart.dto.Cart;
+import com.ojas.cart.dto.CartItem;
+import com.ojas.cart.dto.CustomResponse;
+import com.ojas.cart.dto.UpdateCartRequest;
+import com.ojas.cart.service.CartService;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 
@@ -36,7 +36,7 @@ public class CartControllerTest {
     @Test
     public void testViewCart() throws Exception {
         Cart cart = Cart.builder().id(2).build();
-        when(userService.extractEmailFromRequest(any())).thenReturn("mayank@gg.com");
+        when(userService.extractEmailFromRequest(any())).thenReturn("ojas@gg.com");
         when(cartService.getCartByUserEmail(any())).thenReturn(cart);
         List<CartItem> cartItems = List.of(CartItem.builder().id(2).build());
         when(cartService.getAllCartItemsByID(cart.getId())).thenReturn(cartItems);
@@ -47,7 +47,7 @@ public class CartControllerTest {
     }
     @Test
     public void testUpdateCartItem() throws Exception {
-        when(userService.extractEmailFromRequest(any())).thenReturn("mayank@gg.com");
+        when(userService.extractEmailFromRequest(any())).thenReturn("ojas@gg.com");
         when(cartService.updateCartItem(any(), any())).thenReturn(true);
         MockHttpServletRequest mockHttpServletRequest = new MockHttpServletRequest();
         CustomResponse customResponse = cartController.updateCartItem(UpdateCartRequest.builder().quantity(2).productId("heya").build(),mockHttpServletRequest);
@@ -55,7 +55,7 @@ public class CartControllerTest {
     }
     @Test
     public void testUpdateCartItemDelete() throws Exception {
-        when(userService.extractEmailFromRequest(any())).thenReturn("mayank@gg.com");
+        when(userService.extractEmailFromRequest(any())).thenReturn("ojas@gg.com");
         when(cartService.updateCartItem(any(), any())).thenReturn(true);
         MockHttpServletRequest mockHttpServletRequest = new MockHttpServletRequest();
         CustomResponse customResponse = cartController.updateCartItem(UpdateCartRequest.builder().quantity(0).productId("heya").build(),mockHttpServletRequest);
@@ -63,7 +63,7 @@ public class CartControllerTest {
     }
     @Test
     public void testUpdateCartItemFalse() throws Exception {
-        when(userService.extractEmailFromRequest(any())).thenReturn("mayank@gg.com");
+        when(userService.extractEmailFromRequest(any())).thenReturn("ojas@gg.com");
         when(cartService.updateCartItem(any(), any())).thenReturn(false);
         MockHttpServletRequest mockHttpServletRequest = new MockHttpServletRequest();
         CustomResponse customResponse = cartController.updateCartItem(UpdateCartRequest.builder().quantity(0).productId("heya").build(),mockHttpServletRequest);
@@ -71,7 +71,7 @@ public class CartControllerTest {
     }
     @Test
     public void testCheckout() throws Exception {
-        when(userService.extractEmailFromRequest(any())).thenReturn("mayank@gg.com");
+        when(userService.extractEmailFromRequest(any())).thenReturn("ojas@gg.com");
         when(cartService.deleteCartByUserEmail(any())).thenReturn(true);
         MockHttpServletRequest mockHttpServletRequest = new MockHttpServletRequest();
         CustomResponse customResponse = cartController.checkout(mockHttpServletRequest);
@@ -79,7 +79,7 @@ public class CartControllerTest {
     }
     @Test
     public void testCheckoutCartEmpty() throws Exception {
-        when(userService.extractEmailFromRequest(any())).thenReturn("mayank@gg.com");
+        when(userService.extractEmailFromRequest(any())).thenReturn("ojas@gg.com");
         when(cartService.deleteCartByUserEmail(any())).thenReturn(false);
         MockHttpServletRequest mockHttpServletRequest = new MockHttpServletRequest();
         CustomResponse customResponse = cartController.checkout(mockHttpServletRequest);

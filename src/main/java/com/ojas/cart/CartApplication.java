@@ -1,4 +1,4 @@
-package com.mayank.cart;
+package com.ojas.cart;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

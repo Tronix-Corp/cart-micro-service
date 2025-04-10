@@ -1,4 +1,4 @@
-package com.mayank.cart.dto;
+package com.ojas.cart.dto;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;

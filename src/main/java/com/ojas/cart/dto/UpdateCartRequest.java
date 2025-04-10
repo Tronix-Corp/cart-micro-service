@@ -1,4 +1,4 @@
-package com.mayank.cart.dto;
+package com.ojas.cart.dto;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;

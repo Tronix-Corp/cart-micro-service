@@ -1,6 +1,6 @@
-package com.mayank.cart.repository;
+package com.ojas.cart.repository;
 
-import com.mayank.cart.dto.CartItem;
+import com.ojas.cart.dto.CartItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

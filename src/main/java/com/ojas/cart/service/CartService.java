@@ -1,8 +1,8 @@
-package com.mayank.cart.service;
+package com.ojas.cart.service;
 
-import com.mayank.cart.dto.UpdateCartRequest;
-import com.mayank.cart.dto.Cart;
-import com.mayank.cart.dto.CartItem;
+import com.ojas.cart.dto.UpdateCartRequest;
+import com.ojas.cart.dto.Cart;
+import com.ojas.cart.dto.CartItem;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

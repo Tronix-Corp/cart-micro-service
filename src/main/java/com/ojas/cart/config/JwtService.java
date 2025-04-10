@@ -1,4 +1,4 @@
-package com.mayank.cart.config;
+package com.ojas.cart.config;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

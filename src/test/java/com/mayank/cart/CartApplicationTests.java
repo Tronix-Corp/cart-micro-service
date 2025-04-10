@@ -1,4 +1,4 @@
-package com.mayank.cart;
+package com.ojas.cart;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.mayank.cart.config;
+package com.ojas.cart.config;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;

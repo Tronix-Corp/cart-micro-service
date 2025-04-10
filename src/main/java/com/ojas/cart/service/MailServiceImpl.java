@@ -1,4 +1,4 @@
-package com.mayank.cart.service;
+package com.ojas.cart.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;

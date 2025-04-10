@@ -1,4 +1,4 @@
-package com.mayank.cart.service;
+package com.ojas.cart.service;
 
 import org.springframework.stereotype.Service;
 

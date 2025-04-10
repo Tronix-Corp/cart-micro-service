@@ -1,10 +1,10 @@
-package com.mayank.cart.service;
+package com.ojas.cart.service;
 
-import com.mayank.cart.dto.UpdateCartRequest;
-import com.mayank.cart.dto.Cart;
-import com.mayank.cart.dto.CartItem;
-import com.mayank.cart.repository.CartItemRepository;
-import com.mayank.cart.repository.CartRepository;
+import com.ojas.cart.dto.UpdateCartRequest;
+import com.ojas.cart.dto.Cart;
+import com.ojas.cart.dto.CartItem;
+import com.ojas.cart.repository.CartItemRepository;
+import com.ojas.cart.repository.CartRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

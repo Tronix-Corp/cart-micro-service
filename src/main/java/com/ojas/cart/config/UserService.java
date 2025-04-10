@@ -1,4 +1,4 @@
-package com.mayank.cart.config;
+package com.ojas.cart.config;
 
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;

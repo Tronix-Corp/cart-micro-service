@@ -1,4 +1,4 @@
-package com.mayank.cart.dto;
+package com.ojas.cart.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

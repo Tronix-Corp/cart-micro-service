@@ -1,4 +1,4 @@
-package com.mayank.cart.exception;
+package com.ojas.cart.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,9 +1,9 @@
-package com.mayank.cart.controller;
+package com.ojas.cart.controller;
 
-import com.mayank.cart.config.UserService;
-import com.mayank.cart.dto.*;
-import com.mayank.cart.service.CartService;
-import com.mayank.cart.service.MailService;
+import com.ojas.cart.config.UserService;
+import com.ojas.cart.dto.*;
+import com.ojas.cart.service.CartService;
+import com.ojas.cart.service.MailService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
@@ -73,7 +73,7 @@ public class CartController {
                 return new CustomResponse("Encountered a problem during checkout. -- Cart Empty", HttpStatus.OK);
             }
             logger.log(Level.INFO, "Checkout Successful.");
-            mailService.sendMail("mayankatwork06@gmail.com");
+            mailService.sendMail("ojasatwork06@gmail.com");
             return new CustomResponse("Checkout Successful.", HttpStatus.OK);
         } catch (Exception e) {
             logger.log(Level.WARNING, "Encountered a problem during checkout. - checkout in CartController " + e.getMessage());
